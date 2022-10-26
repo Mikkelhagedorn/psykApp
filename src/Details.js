@@ -5,7 +5,7 @@ import * as firebase from 'firebase';
 const Details = ()=>{
 
     const [companyData, setCompanyData] = useState([]);
-
+ // Getting details from database
     const GetCompanyDetails=async ()=>{
         const docs = await db.collection('Company').get();
         const _service = [];
@@ -18,7 +18,7 @@ const Details = ()=>{
     useEffect(()=>{
         GetCompanyDetails();
     },[])
-
+//View
     return(
         <SafeAreaView>
             <View style={{ paddingHorizontal : 20, }}>
@@ -44,6 +44,8 @@ const Details = ()=>{
         </SafeAreaView>
     )
 }
+
+//Style
 const styles = StyleSheet.create({
     list_item : {
         width : "100%",
@@ -53,4 +55,6 @@ const styles = StyleSheet.create({
         paddingHorizontal : 10,
     }
 })
+
+//Export
 export default Details;

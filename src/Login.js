@@ -43,7 +43,7 @@ const Login = ({ navigation }) => {
         setDate(date);
         setIsTime(false);
     }
-
+//View
     return (
         <SafeAreaView style={{marginTop: StatusBar.currentHeight}}>
             <View style={{display: "flex", alignItems: "center", marginTop: StatusBar.currentHeight}}>
