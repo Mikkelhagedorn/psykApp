@@ -2,6 +2,8 @@ import * as firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/firestore';
 import 'firebase/storage';
+
+// Config for database
 const firebaseConfig = {
     apiKey: "AIzaSyDMrha8ZupdXsvOaUv4zCR3EWHjsBOGNs4",
     authDomain: "companydetails-6f880.firebaseapp.com",
@@ -10,6 +12,8 @@ const firebaseConfig = {
     messagingSenderId: "699301522453",
     appId: "1:699301522453:web:68eff701e6684589e6721c"
 };
+
+//Init app with config
 let app;
 if (firebase.apps.length === 0) {
     app = firebase.initializeApp(firebaseConfig);
