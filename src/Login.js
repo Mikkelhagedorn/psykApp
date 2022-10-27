@@ -43,7 +43,7 @@ const Login = ({ navigation }) => {
         setDate(date);
         setIsTime(false);
     }
-//View
+
     return (
         <SafeAreaView style={{marginTop: StatusBar.currentHeight}}>
             <View style={{display: "flex", alignItems: "center", marginTop: StatusBar.currentHeight}}>
@@ -63,7 +63,7 @@ const Login = ({ navigation }) => {
                     }}/>
                 </View>
                 {
-                    isTime ? <RNDateTimePicker onChange={onTimeSelected}
+                    isTime ? <RNDateTimePicker onChange={onTimeSelected} display="calendar" style={{ width : "100%",height : 100, }}
                                                value={new Date()} mode="date"/> : <></>
                 }
 
